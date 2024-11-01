@@ -94,7 +94,7 @@ const BookRecommendationApp: React.FC = () => {
         </select>
       </div>
 
-      <div className="mb-4">
+      {/* <div className="mb-4">
         <label htmlFor="mood" className="block mb-2 font-semibold">Select your mood:</label>
         <select
           id="mood"
@@ -108,7 +108,7 @@ const BookRecommendationApp: React.FC = () => {
             <option key={mood} value={mood}>{mood}</option>
           ))}
         </select>
-      </div>
+      </div> */}
 
       <button
         onClick={getRecommendations}
