@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-landing-page',
+  selector: 'app-nx-welcome',  // Use the original selector
   template: `
     <div class="landing-wrapper">
       <div class="content-container">
@@ -59,7 +59,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   ],
   encapsulation: ViewEncapsulation.None,
 })
-export class LandingPageComponent {
+export class NxWelcomeComponent {
   goToReactApp() {
     window.open('https://assessement-repo.vercel.app/', '_blank');
   }
