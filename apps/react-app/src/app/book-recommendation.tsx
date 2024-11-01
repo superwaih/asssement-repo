@@ -103,9 +103,7 @@ const bookDatabase: Book[] = [
 const allGenres = Array.from(
   new Set(bookDatabase.flatMap((book) => book.genres))
 ).sort();
-const allMoods = Array.from(
-  new Set(bookDatabase.flatMap((book) => book.mood))
-).sort();
+
 
 const BookRecommendationApp: React.FC = () => {
   const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
@@ -174,24 +172,7 @@ const BookRecommendationApp: React.FC = () => {
           ))}
         </select>
       </div>
-      <div className="mb-4">
-        <label htmlFor="mood" className="block mb-2 font-semibold">
-          Select your current mood:
-        </label>
-        <select
-          id="mood"
-          value={selectedMood}
-          onChange={handleMoodChange}
-          className="w-full p-2 border rounded"
-        >
-          <option value="">Any mood</option>
-          {allMoods.map((mood) => (
-            <option key={mood} value={mood}>
-              {mood}
-            </option>
-          ))}
-        </select>
-      </div>
+    
       <button
         onClick={getRecommendations}
         disabled={isLoading}
