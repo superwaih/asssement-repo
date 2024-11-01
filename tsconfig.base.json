@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@book-recommendation-app/index": ["utils/index.ts/src/index.ts"],
+      "@book-recommendation/angular-app/*": ["apps/angular-app/src/app/*"],
+      "@book-recommendation/react-app/*": ["apps/react-app/src/app/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
